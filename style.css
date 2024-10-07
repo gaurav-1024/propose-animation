@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+
+    width:100%;
+    /* height: 100vh; */
+    aspect-ratio:16/7.34;
+    position:relative;
+    background-image: url("oa.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+.absolute{
+    position:absolute;
+}
+.boy{
+    bottom:5%;
+    width:10%;
+    height:auto;
+    animation:move linear 9s 1 forwards;
+    z-index:2;
+}
+
+@keyframes move{
+    form{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(450%)
+    }
+}
+.girl{
+    left:60%;
+    bottom:5%;
+    width:8%;
+    height:auto;
+}
+.rose{
+    display:none;
+    width:2%;
+    height:auto;
+    left: 55%;
+    /* top: 65%; */
+    z-index: 1;
+    /* animation:drop ease-in 1s 1 forwards; */
+}
+
+@keyframes drop{
+    0%{
+        top:10%;
+        display:none;
+    }
+    50%{
+        display:block;
+    }
+    100%{
+        top:65%;
+    }
+}
+
+#balloon1{
+    left:10%;
+}
+#balloon2{
+    left:30%;
+}
+#balloon3{
+    left:45%;
+}
+#balloon4{
+    left:60%;
+}
+#balloon5{
+    left:75%;
+}
+#balloon6{
+    left:90%;
+}
+
+.balloon{
+    width:5%;
+    height:auto;
+    bottom:0%;
+    display:none;
+    /* animation: move-up 10s 1 forwards; */
+
+}
+
+@keyframes move-up{
+    0%{
+        transform:translateY(0);
+    }
+    100%{
+        transform:translateY(-700%);
+    }
+}
